@@ -542,7 +542,7 @@ INSERT INTO SM_ACT
 	"16a3b4fb-9031-46ab-a722-1fc6da79d7cb",
 	1,
 	'self.line_ditections = self.line_ditections + 1;
-if(self.line_ditections >= 3)
+if(self.line_ditections >= 300)
   generate navigate7:halt() to self;
 else
   select one s related by self->steering[R1];
